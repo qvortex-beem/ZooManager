@@ -5,8 +5,102 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFZooManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="580">
     <Grid>
-        
+        <Label Content="Zoo List"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="10,10,0,0"/>
+        <ListBox x:Name="listZoos"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="155" Height="175"
+                Margin="10,41,0,0"
+                SelectionChanged="listZoos_SelectionChanged"/>
+        <Label Content="Associated Animals"
+               HorizontalAlignment="left"
+               VerticalAlignment="Top"
+               Margin="202,10,0,0"/>
+        <ListBox x:Name="listAssociatedAnimals"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="155" Height="175"
+                 Margin="200,41,0,0"/>
+        <ListBox x:Name="listAllAnimals"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="155" Height="300"
+                 Margin="399,52,0,0"/>
+        <Button Content="Delete Zoo"
+                Click="DeleteZoo_Click"
+                Background="Tomato"
+                Foreground="White"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,235,0,0"/>
+        <Button Content="Remove Animal"
+                Click="RemoveAnimal_Click"
+                Background="Tomato"
+                Foreground="White"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="202,235,0,0"/>
+        <Button Content="Add Zoo"
+                Click="AddZoo_Click"
+                Background="LightGreen"
+                Foreground="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,318,0,0"/>
+        <Button Content="Add Animal Zoo"
+                Click="AddAnimal_Click"
+                Background="LightGreen"
+                Foreground="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="202,318,0,0"/>
+        <Button Content="Update Zoo"
+                Click="UpdateZoo_Click"
+                Background="LightBlue"
+                Foreground="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="10,357,0,0"/>
+        <Button Content="Update Animal"
+                Click="UpdateAnimal_Click"
+                Background="LightBlue"
+                Foreground="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="202,357,0,0"/>
+        <Button Content="Delete Animal"
+                Click="DeleteAnimal_Click"
+                Background="Tomato"
+                Foreground="White"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="396,357,0,0"/>
+        <Button Content="Add Animal to Zoo"
+                Click="AddAnimalToZoo_Click"
+                Background="LightGreen"
+                Foreground="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="158" Height="34"
+                Margin="396,6,0,0"/>
+        <TextBox x:Name="myTextBox"
+                Text="TextBox"
+                TextWrapping="Wrap"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Height="39" Width="350"
+                Margin="10,274,0,0"/>
     </Grid>
 </Window>
